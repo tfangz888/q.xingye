@@ -9,7 +9,7 @@ cd /home/toby/q
 q tick.q symxingye /media/sf_e/data/datasource/xingye  -p 5010 </dev/null >/dev/null 2>&1 &
 sleep 1
 
-q ./feedhandler/feed.q </dev/null >/dev/null 2>&1 &
+q ./feedhandler/xingye_feed.q </dev/null >/dev/null 2>&1 &
 
 # rdb, 端口为5011
 # 先装入TP的LOG文件。00:00点钟时会存入当天的数据
