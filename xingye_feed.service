@@ -1,13 +1,13 @@
-# xingye_q.service in /etc/systemd/system
+# xingye_feed.service in /etc/systemd/system
 
 [Unit]
-Description=运行 xingye_q 服务器
+Description=运行 xingye_feed 服务器
 
 [Service]
-Type= simple
+Type=simple
 User=toby
 
-ExecStart=/home/toby/q/xingye_q.sh
+ExecStart=/home/toby/q/l32/q ./feedhandler/xingye_feed.q </dev/null >/dev/null 2>&1
 # ExecStop=/usr/bin/killall wechat
 
 [Install]
