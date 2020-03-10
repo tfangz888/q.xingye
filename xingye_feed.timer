@@ -1,13 +1,14 @@
-# xingye_q.timer in /etc/systemd/system
-# systemctl enable xingye_q.timer
-# systemctl start xingye_q.timer
+# xingye_feed.timer in /etc/systemd/system
+# systemctl enable xingye_feed.timer
+# systemctl start xingye_feed.timer
 
 [Unit]
-Description= 运行 xingye_q.service
+Description= 运行 xingye_feed.service
 
 [Timer]
 OnBootSec=2min
-Unit= xingye_q.service
+# OnCalendar=*-*-* *:0/1:00
+Unit= xingye_feed.service
 # Persistent=true # 如果错过了上次启动时间，，它会立即触发服务
 
 [Install]
