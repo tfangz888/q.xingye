@@ -11,7 +11,7 @@ h:0i
 / feed handler:
 feed:{h(".u.upd";`trade;x);}
 //解析 json, 插入dictionary的值
-.z.ws:{ feed [value "Sfi"$flip .j.k x] }
+.z.ws:{ feed [value "Sff"$flip .j.k x] }
 
 / 连接websocket server
 ip:"127.0.0.1:5001"
