@@ -11,7 +11,10 @@ h:0i
 / feed handler:
 feed:{h(".u.upd";`trade;x);}
 //解析 json, 插入dictionary的值
-.z.ws:{ feed [value "SFF"$flip .j.k x] }
+/ "[{\"sym\":\"sz.000758\",\"price\":4.220000,\"turnover\":14770562.000000}]"
+/ 注意,这里解析的源是数字,不是字符串.  要与pytdx相区别
+/ .z.ws:{ feed [value "SFF"$flip .j.k x] }
+.z.ws:{ feed [value "Sff"$flip .j.k x] }  
 
 / 连接websocket server
 ip:"127.0.0.1:5001"
