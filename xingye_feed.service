@@ -8,7 +8,7 @@ Type=simple
 User=toby
 
 # ExecStart=/home/toby/q/l32/q ./feedhandler/xingye_feed.q </dev/null >/dev/null 2>&1
-ExecStart=q32 ./feedhandler/xingye_feed.q </dev/null >/dev/null 2>&1
+ExecStart=q32 /home/toby/q/feedhandler/xingye_feed.q </dev/null >/dev/null 2>&1
 # ExecStop=/usr/bin/killall wechat
 
 [Install]
