@@ -3,6 +3,7 @@ cp tick/symxingye.q /home/toby/q/tick/
 mkdir -p /home/toby/q/feedhandler
 cp feedhandler/xingye_feed.q /home/toby/q/feedhandler/
 
+cp xingye_q.sh /home/toby/q/
 cp xingye_tickerplant.sh /home/toby/q/
 cp xingye_rdb.sh /home/toby/q/
 
